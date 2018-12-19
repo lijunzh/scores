@@ -34,8 +34,11 @@ upper = {
     ees'4 g'8 f'8 f'4 aes'8 g'8 |
     g'4. g'8 ees'8 f'8 g'4 |
     g'4 f'8 ees'8 f'4. d'8 |
-    d'4. c'8 c'2 |
-
+    d'4. c'8 c'2 |                              \break
+    ees'4 g'8\arpeggio f'8 f'4 aes'8 g'8 |
+    g'4. g'8 ees'8 f'8 g'4 |
+    g'4 f'8 ees'8 f'4. aes'8 |
+    aes'4. g'8 g'2 |                              \break
 }
 
 lower = {
@@ -54,16 +57,22 @@ lower = {
     c8 g8 <aes es' g'>4\arpeggio ees4 d4 |
     aes,8 ees8 <aes es' g'>4\arpeggio d'4 bes4 |
     c8 ees8  g4 ees4 <d d'>4 |                       \break
+    c8 g8 <c' ees>4\arpeggio <bes d'>4 <c' ees'>4 |
+    c8 g8 bes8 c'8 ees4 d4 |
+    aes,8 ees8 g8 c'8 bes,8 f8 bes8 d'8 |
+    ees,8 bes,8 ees8 g8 b,8 b,32 c32 d32 ees32 f32 g32 g16 ees16 d16 |
 }
 
 text = \lyricmode {
     Ka -- z -- e -- sa -- s -- o -- u ko -- ka -- ge ni u -- tsu -- bu -- se -- te na -- i te -- ru
     Mi m -- o shi -- r -- a -- nu wa -- ta -- shi wo wa -- ta -- shi ga mi -- te -- i -- ta
+    Yu -- k -- u hi -- t -- o no shi -- ra -- be wo ka -- na -- de -- ru GI -- TA -- A -- RA
 }
 
 \score {
     \new PianoStaff <<
-        \set PianoStaff.instrumentName = #"Piano "
+        \set PianoStaff.instrumentName = #"Piano"
+        \set PianoStaff.connectArpeggios = ##t
         \new Staff = "upper" { \new Voice = "singer" \upper }
         \new Lyrics \lyricsto "singer" \text
         \new Staff = "lower" \lower
