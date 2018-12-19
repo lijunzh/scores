@@ -9,9 +9,17 @@
 }
 
 \header {
+    dedication = "For my son, Jimmy"
     title = "Trinkle Trinkle Little Star"
-    subtitle = "for Jimmy"
-    composer = "Typed by Lijun Zhu"
+    % subtitle = "for Jimmy"
+    instrument = "Piano"
+
+    composer = "Trad."
+    arranger = "Arr. Lijun Zhu"
+    poet = "Jane Taylor"
+
+    tagline = "Adapted from https://www.8notes.com/scores/2904.asp"
+    copyright = \markup { \char ##x00A9 "2018 Lijun Zhu.  All rights reserved." }
 }
 
 
