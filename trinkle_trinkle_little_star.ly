@@ -42,12 +42,12 @@ lower = {
 }
 
 text = \lyricmode {
-    Twin- kle, twin- kle, lit- tle star
-    How I won- der what you are
-    Up a- bove the world so high
-    Like a dia- mond in the sky
-    Twin- kle, twin- kle lit- tle star
-    How I won- der what you are
+    Twin -- kle, twin -- kle, lit -- tle star
+    How I won -- der what you are
+    Up a -- bove the world so high
+    Like a dia -- mond in the sky
+    Twin -- kle, twin -- kle lit -- tle star
+    How I won -- der what you are
 }
 
 \score {
