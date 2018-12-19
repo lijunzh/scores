@@ -31,7 +31,10 @@ upper = {
     g'4. g'8 ees'8 f'8 g'4 |
     g'4 f'8 ees'8 f'4 d'8 d'8 |
     d'4. ees'8 ees'2 |                          \break
-
+    ees'4 g'8 f'8 f'4 aes'8 g'8 |
+    g'4. g'8 ees'8 f'8 g'4 |
+    g'4 f'8 ees'8 f'4. d'8 |
+    d'4. c'8 c'2 |
 
 }
 
@@ -47,11 +50,15 @@ lower = {
     c8 ees8 g4 <ees c'>4 <d bes>4 |
     aes8 c'8 ees'4 bes,8 f8 bes4 |
     <b, d g>4.\arpeggio b,8 <d g>4 <b, b>4 |    \break
-
+    c8 g8 <g c' ees'>4 <d g bes>4 <ees g c'>4 |
+    c8 g8 <aes es' g'>4\arpeggio ees4 d4 |
+    aes,8 ees8 <aes es' g'>4\arpeggio d'4 bes4 |
+    c8 ees8  g4 ees4 <d d'>4 |                       \break
 }
 
 text = \lyricmode {
     Ka -- z -- e -- sa -- s -- o -- u ko -- ka -- ge ni u -- tsu -- bu -- se -- te na -- i te -- ru
+    Mi m -- o shi -- r -- a -- nu wa -- ta -- shi wo wa -- ta -- shi ga mi -- te -- i -- ta
 }
 
 \score {
