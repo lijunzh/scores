@@ -25,8 +25,10 @@
 upper = {
     \tempo 4 = 84
     \clef treble
-    \key ees \major
+    \key c \minor
     \numericTimeSignature \time 4/4
+
+    % slow: first block
     r1 | r1 | r1 | r1 |                                                 \break
     ees'4 g'8 f'8 f'4 aes'8 g'8 |
     g'4. g'8 ees'8 f'8 g'4 |
@@ -45,6 +47,7 @@ upper = {
     g'4 f'8 ees'8 f'4 d'8 c'8 |
     c'2 r2 |                                                            \break
 
+    % slow: seocnd block
     g'4 g'4 c''4. c''8 |
     c''2 bes'8 c''8 d''8 bes'8 |
     g'4 g'4 c''4. c''8 |
@@ -66,17 +69,30 @@ upper = {
     g'1~ |
     g'1 |                                                               \break
 
+    % transient
     \tempo 4 = 100
     <c' ees'>1 |
-    d'4 d'4 f' f'|
+    d'4 d'4 f' f'|                                                      \break
     <c' ees'>1 |
     d'2 f'2 |                                                           \break
+
+    % fast: third block
+    ees'4 g'8 f'8 f'4 aes'8 g'8 |
+    g'4. g'8 ees'8 f'8 g'4 |                                            \break
+    g'4 f'8 ees'8 f'4 d'8 d'8 |
+    d'4. ees'8 ees'2 |                                                  \break
+    ees'4 g'8 f'8 f'4 aes'8 g'8 |
+    g'4. g'8 ees'8 f'8 g'4 |                                            \break
+    g'4 f'8 ees'8 f'4. d'8 |
+    d'4. c'8 c'2 |                                                      \break
 }
 
 lower = {
     \clef bass
-    \key ees \major
+    \key c \minor
     \numericTimeSignature \time 4/4
+
+    % slow: first block
     c8\sustainOn\ffff bes8 d'8 ees'8 g'8 f'8 ees'8 c'8 |
     c8 bes8 <d' f'>8 bes8 g'2 |
     c8 bes8 d'8 ees'8 g'8 f'8 ees'8 c'8 |
@@ -98,6 +114,7 @@ lower = {
     aes,8 ees8 <aes, d g>4 bes,8 f8 bes8 f8|
     ees8 d8 es4 g4 d4 |                                                 \break
 
+    % slow: second block
     c8 g8 c'8 d'8 ees'8 g8 d'8 ees'8 |
     c8 f8 bes8 c'8 d'4 bes8 f8 |
     c8 g8 c'8 d'8 ees'8 g8 d'8 ees'8 |
@@ -119,10 +136,15 @@ lower = {
     c8 g8 d'8 ees'8 g'8 ees'8 c'8 g' |
     <c g d'>1                                                           \break
 
+    % transient
     << { g1 } \\ { <g, c ees>8 <c ees>16 <c ees>16 <g, c ees>8 <c ees>16 <c ees>16 <g, c ees>8 <c ees>16 <c ees>16 <g, c ees>8 <c ees>16 <c ees>16 }>> |
     <g, bes, d>8 <bes, d>16 <bes, d>16 <g, bes, d>8 <bes, d>16 <bes, d>16 <g, bes, d>8 <bes, d>16 <bes, d>16 <g, bes, d>8 <bes, d>16 <bes, d>16 |
     <g, c ees>8 <c ees>16 <c ees>16 <g, c ees>8 <c ees>16 <c ees>16 <g, c ees>8 <c ees>16 <c ees>16 <g, c ees>8 <c ees>16 <c ees>16 |
     <g, bes, d>8 <bes, d>16 <bes, d>16 <g, bes, d>8 <bes, d>16 <bes, d>16 <g, bes, d>8 <bes, d>16 <bes, d>16 <g, bes, d>8 <bes, d>16 <bes, d>16 |
+
+    % fast: third block
+    << {ees8 g8 c'4 d8f8 d'4} \\ { <g, c>8 <c ees>16 <c ees>16 <c ees>8 <c ees>16 <c ees>16 <g, bes,>8 <bes, d>16 <bes, d>16 d8 <bes, d>16 <bes, d>16 }>> |
+    << { d8 g8 c'8 g8 g4 c8 bes,8 } \\ { g,8 <c ees>16 <c ees>16 <c ees>8 <c ees>16 <c ees>16 g,8 <c ees>16 <c ees>16 ees8 d16 <bes, d>16 } >>
 }
 
 text = \lyricmode {
